@@ -1,0 +1,16 @@
+---
+title: "FirstRMarkdown"
+author: "Ziyu"
+date: "2021/11/8"
+output: html_document
+---
+#Wave plot
+
+```{r setup, include=TRUE}
+knitr::opts_chunk$set(echo = TRUE)
+x<-seq(0,20,0.01)
+y<-sin(x)
+sin_df<-data.frame(x,y)
+head(sin_df,3)
+plot(sin_df)
+```
